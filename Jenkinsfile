@@ -2,14 +2,14 @@ pipeline {
   agent {
     docker {
       image 'postman/newman_ubuntu1404'
-      args '-v ./colls:/etc/newman --collection="col1.json"'
+      args '-v ./colls:/etc/newman'
     }
-    
   }
+  
   stages {
     stage('Postman') {
       steps {
-        sh 'echo testik'
+        sh 'echo test'
       }
     }
   }
