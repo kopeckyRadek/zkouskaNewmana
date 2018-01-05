@@ -9,7 +9,9 @@ pipeline {
   stages {
     stage('Postman') {
       steps {
-        sh 'echo test'
+        sh 'echo test1'
+		sh 'newman run col1.json'
+		sh 'echo test2'
       }
     }
   }
