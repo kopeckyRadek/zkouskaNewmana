@@ -2,7 +2,7 @@ pipeline {
 	agent {
 		docker {
 			image 'postman/newman_ubuntu1404'
-			agrs '-v ./colls:/etc/newman --collection="col1.json"'
+			args '-v ./colls:/etc/newman --collection="col1.json"'
 		}
 	}
 	
