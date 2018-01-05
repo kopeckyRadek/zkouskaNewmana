@@ -5,7 +5,7 @@ pipeline {
       args '-v colls:/etc/newman'
     }
   }
-  
+   
   stages {
     stage('Postman') {
       steps {
